@@ -15,7 +15,7 @@ class App extends React.Component {
 
   play() {
     const audio = this.audioRef.current
-    setTimeout(() => this.setState({stage: 'newbrand'}), 8144);
+    setTimeout(() => this.setState({stage: 'newbrand'}), 8300);
     audio.play()
     this.setState({ stage: 'oldbrand' })
   }
