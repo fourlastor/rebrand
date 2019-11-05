@@ -1,22 +1,39 @@
 .App {
   text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-}
-
-.App-header {
-  background-color: #282c34;
   min-height: 100vh;
   display: flex;
-  flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  width: 100%;
+  flex-direction: column;
 }
 
-.App-link {
-  color: #09d3ac;
+.oldbrand {
+  color: white;
+  font-size: 36pt;
+  font-family: 'VT323', monospace;
+}
+
+.rebrand { 
+  animation: color-change 3s infinite;
+  text-transform: uppercase;
+  font-size: 48px;
+  font-weight: bold;
+}
+
+@keyframes color-change {
+  0% { color: #217AEB; }
+  50% { color: #EC2F02; }
+  100% { color: #55A94A; }
+}
+
+.rebrand-input {
+  background: none;
+  border: 2px dashed white;
+  text-align: center;
+  padding: 4px;
+  font-size: 36pt;
+  font-family: 'VT323', monospace;
+  color: white;
+  margin-bottom: 10px;
 }
